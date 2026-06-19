@@ -23,7 +23,7 @@ const HomePage = () => {
       {/* Header Navigation */}
       <Header />
 
-      {/* Main Content */}
+      {/************Main Content*********** */}
 
       {/* Hero / Registration Section */}
       <Hero />
@@ -43,8 +43,6 @@ const HomePage = () => {
       {/* Services Section */}
       <Services />
 
-
-
       {/* Export & International Expansion Section */}
       <ExportServices />
 
@@ -53,6 +51,7 @@ const HomePage = () => {
 
       {/* Schemes Directory Section */}
       <SchemesDirectory />
+      
       {/* Process Section */}
       <Process />
 

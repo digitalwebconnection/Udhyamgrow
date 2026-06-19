@@ -133,7 +133,7 @@ const Process = () => {
           viewport={{ once: true }}
           className="md:mt-16 mt-8 text-center"
         >
-          <p className="font-display text  md:text    text-muted italic mb-4">
+          <p className="font-display    text-muted  mb-4">
             Start your startup journey with expert guidance.
           </p>
 
@@ -141,7 +141,7 @@ const Process = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setPopupOpen(true)}
-            className="bg-linear-to-r from-gold to-blue-950 px-10 py-3      text-white text  font-semibold inline-flex items-center gap-2 cursor-pointer"
+            className="bg-linear-to-r shadow-lg shadow-black from-gold to-blue-950 px-10 py-3      text-white text  font-semibold inline-flex items-center gap-2 cursor-pointer"
           >
             Book Free Consultation →
           </motion.button>

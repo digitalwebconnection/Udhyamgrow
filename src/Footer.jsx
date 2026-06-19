@@ -181,7 +181,7 @@ export const Footer = () => (
     <div className="absolute top-10 left-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
     <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
 
-    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-16">
         {/* Col 1-2: Brand */}
         <div className="lg:col-span-2">
@@ -251,8 +251,8 @@ export const Footer = () => (
           </h4>
           <div className="flex flex-col gap-4 text-sm text-slate-800">
             <p className="leading-relaxed">
-              1110-B, Titanium City Center, Near Sachin Towers,<br />
-              100Feet Ring Road, Anand Nagar, Satellite,<br />
+              1110-B, Titanium City Center, Near Sachin Towers,
+              100Feet Ring Road, Anand Nagar, Satellite,
               Ahmedabad - 380015
             </p>
             <a href="tel:+919274713112" className="hover:text-gold transition-colors font-medium">
@@ -267,10 +267,10 @@ export const Footer = () => (
 
       {/* Bottom strip */}
       <div className="border-t border-slate-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-slate-500 text-xs">
+        <p className="text-slate-800 text-xs">
           © {new Date().getFullYear()} Udhyamgrow Services Private Limited. All rights reserved.
         </p>
-        <p className="font-display text-gold/80 text-xs font-semibold">
+        <p className="font-display text-gold text-xs font-semibold">
           Transforming Startups, Scaling Growth.
         </p>
       </div>
