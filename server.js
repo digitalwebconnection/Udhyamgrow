@@ -22,7 +22,7 @@ async function createServer() {
     })
     app.use(vite.middlewares)
   } else {
-    app.use(base, express.static(path.resolve(__dirname, 'dist/client'), {
+    app.use(base, express.static(path.resolve(__dirname, 'dist'), {
       index: false,
     }))
   }
@@ -39,9 +39,8 @@ async function createServer() {
         template = await vite.transformIndexHtml(url, template)
         render = (await vite.ssrLoadModule('/src/entry-server.jsx')).render
       } else {
-        template = fs.readFileSync(path.resolve(__dirname, 'dist/client/index.html'), 'utf-8')
-        // Using file:// URL import for cross-platform ES modules file paths in production
-        const serverEntryPath = path.resolve(__dirname, 'dist/server/entry-server.js')
+        template = fs.readFileSync(path.resolve(__dirname, 'dist/index.html'), 'utf-8')
+        const serverEntryPath = path.resolve(__dirname, 'dist-server/entry-server.js')
         render = (await import(`file://${serverEntryPath}`)).render
       }
 
