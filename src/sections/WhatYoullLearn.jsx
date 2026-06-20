@@ -41,7 +41,7 @@ const WhatYoullLearn = () => {
   }, []);
 
   return (
-    <section id="learn" className="bg-white py-8 lg:py-0">
+    <section id="learn" className="bg-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* HEADER */}

@@ -50,7 +50,7 @@ const Hero = () => {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/80 -skew-x-12 origin-top-right z-0 border-l border-slate-100" />
 
       {/* Content wrapper */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-10 lg:py-0 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-30 lg:py-0 w-full">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
           {/* Left column: Text Content & Primary Action */}

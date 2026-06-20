@@ -34,7 +34,7 @@ export const Contact = () => (
             <span className="section-header-eyebrow">GET IN TOUCH</span>
             <span className="gold-rule" />
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-ink mb-12">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-ink mb-8 lg:mb-12">
             Let's start your{' '}
             <em className="text-gold italic">startup story</em>.
           </h2>
@@ -103,7 +103,7 @@ export const Contact = () => (
 
         {/* Right: CTA card */}
         <div
-          className="relative bg-ink p-12 overflow-hidden"
+          className="relative bg-ink p-6 sm:p-12 overflow-hidden"
           style={{
             background:
               'radial-gradient(ellipse at 80% 20%, rgba(184,145,58,0.12) 0%, #0A0A0A 60%)',
@@ -112,7 +112,7 @@ export const Contact = () => (
           <h3 className="font-display text-3xl lg:text-4xl text-white mb-5">
             Book your free consultation
           </h3>
-          <p className="text-white/60 text-sm leading-relaxed mb-10">
+          <p className="text-white/60 text-sm leading-relaxed mb-6 sm:mb-10">
             Talk directly with our startup advisors. Get personalized guidance on registrations,
             certifications, and funding schemes — completely free.
           </p>
@@ -181,7 +181,7 @@ export const Footer = () => (
     <div className="absolute top-10 left-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
     <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
 
-    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-16">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-16">
         {/* Col 1-2: Brand */}
         <div className="lg:col-span-2">
@@ -267,10 +267,10 @@ export const Footer = () => (
 
       {/* Bottom strip */}
       <div className="border-t border-slate-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-slate-800 text-xs">
+        <p className="text-slate-800 text-xs text-center sm:text-left">
           © {new Date().getFullYear()} Udhyamgrow Services Private Limited. All rights reserved.
         </p>
-        <p className="font-display text-gold text-xs font-semibold">
+        <p className="font-display text-gold text-xs font-semibold text-center sm:text-right">
           Transforming Startups, Scaling Growth.
         </p>
       </div>
@@ -288,7 +288,7 @@ export const WhatsAppFloat = () => (
     rel="noopener noreferrer"
     data-testid="whatsapp-float-btn"
     aria-label="Chat on WhatsApp"
-    className="fixed bottom-6 right-6 z-40 w-14 h-14  -full flex items-center justify-center shadow   hover:scale-110 transition-transform duration-300"
+    className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
     style={{ backgroundColor: '#25D366' }}
   >
     <svg viewBox="0 0 32 32" className="w-7 h-7 fill-current text-white">

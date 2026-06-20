@@ -1,4 +1,4 @@
-  import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Cookie, X, Shield, Settings } from 'lucide-react';
 
 export const CookieConsent = () => {

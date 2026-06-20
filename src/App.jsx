@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Toaster } from 'sonner'
 import './App.css'
+import './index.css'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
 import { HomePage } from './sections/index.js'
@@ -15,10 +16,10 @@ function App() {
       infinite: false,
     })
 
-    ;(window as unknown as Record<string, unknown>).lenis = lenis
+    window.lenis = lenis
 
-    let raf: number
-    const loop = (time: number) => {
+    let raf
+    const loop = (time) => {
       lenis.raf(time)
       raf = requestAnimationFrame(loop)
     }
@@ -41,4 +42,3 @@ function App() {
 }
 
 export default App
-
