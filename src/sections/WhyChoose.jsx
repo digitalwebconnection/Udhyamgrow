@@ -3,13 +3,11 @@ import { Users, CheckCircle, ShieldCheck, Clock } from "lucide-react";
 
 /* ---------------- COUNTER COMPONENT ---------------- */
 const Counter = ({ value, start }) => {
-  const [count, setCount] = useState(0);
+  const numericValue = parseInt(value.replace(/[^0-9]/g, "")) || 0;
+  const [count, setCount] = useState(numericValue);
 
   useEffect(() => {
     if (!start) return;
-
-    const numericValue = parseInt(value.replace(/[^0-9]/g, ""));
-    if (isNaN(numericValue)) return;
 
     let current = 0;
     const duration = 1500;
@@ -28,7 +26,7 @@ const Counter = ({ value, start }) => {
     }, stepTime);
 
     return () => clearInterval(timer);
-  }, [value, start]);
+  }, [numericValue, start]);
 
   const suffix = value.replace(/[0-9]/g, "");
 
@@ -39,6 +37,7 @@ const Counter = ({ value, start }) => {
     </>
   );
 };
+
 
 /* ---------------- DATA WITH ICONS ---------------- */
 const stats = [
