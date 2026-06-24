@@ -132,3 +132,25 @@ body {
   animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* ─── Mobile Utilities ─────────────────────────────────────── */
+
+/* Hide scrollbars on horizontal stat strip */
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Safe-area bottom padding for sticky CTA (notched phones) */
+.mobile-sticky-cta {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0.75rem));
+}
+
+/* Add bottom space so content isn't hidden behind sticky bar on mobile */
+@media (max-width: 1023px) {
+  footer {
+    padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Hide mobile sticky CTA when popup/menu overlay is active */
+body[style*="overflow: hidden"] .mobile-sticky-cta {
+  display: none;
+}
