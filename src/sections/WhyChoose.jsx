@@ -85,7 +85,7 @@ const WhyChoose = () => {
   }, []);
 
   return (
-    <section id="why-choose" className="bg-gray-50 py-8 md:py-16">
+    <section id="why-choose" className="bg-white py-8 md:pb-10">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}

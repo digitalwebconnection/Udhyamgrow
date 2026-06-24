@@ -1,0 +1,19 @@
+.magic-rings-container {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.magic-rings-container canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}

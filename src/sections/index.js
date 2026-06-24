@@ -2,7 +2,6 @@
 export { default as HomePage }    from './HomePage';
 export { default as SectionHeader } from './SectionHeader';
 export { default as WhatYoullLearn } from './WhatYoullLearn';
-export { default as Hosts }          from './Hosts';
 export { default as About }          from './About';
 export { default as WhyAttend }      from './WhyAttend';
 export { default as Services }       from './Services';
@@ -12,4 +11,6 @@ export { default as Reviews }        from './Reviews';
 export { default as DoDont }         from './DoDont';
 export { default as SchemesDirectory } from './SchemesDirectory';
 export { default as ExportServices }   from './ExportServices';
+export { default as PrivacyPolicyPage } from './PrivacyPolicyPage';
+
 

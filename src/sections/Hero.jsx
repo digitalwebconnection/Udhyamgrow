@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { MapPin, Coins, Award, ArrowRight, Sparkles } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Award, ArrowRight } from 'lucide-react';
 
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";

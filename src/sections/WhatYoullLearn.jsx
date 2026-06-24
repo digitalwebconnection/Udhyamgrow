@@ -71,7 +71,7 @@ const WhatYoullLearn = () => {
                 className={`group relative overflow-hidden p-8 h-60 border mx-4 my-4 text-center     border-gold transition-all duration-500
                 
                 hover:shadow   hover:-translate-y-2
-                ${isActive ? "shadow   -translate-y-2" : ""}
+                ${isActive ? "shadow-lg shadow-black   -translate-y-2" : ""}
                 ${i < 3 ? "md:col-span-2" : "md:col-span-3"}
               `}
               >

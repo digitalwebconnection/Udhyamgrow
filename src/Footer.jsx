@@ -181,8 +181,8 @@ export const Footer = () => (
     <div className="absolute top-10 left-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
     <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-gold/5 blur-[90px] pointer-events-none z-0" />
 
-    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-16">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-10">
         {/* Col 1-2: Brand */}
         <div className="lg:col-span-2">
           <Logo className="mb-6 h-12" />
@@ -266,13 +266,18 @@ export const Footer = () => (
       </div>
 
       {/* Bottom strip */}
-      <div className="border-t border-slate-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-slate-800 text-xs text-center sm:text-left">
-          © {new Date().getFullYear()} Udhyamgrow Services Private Limited. All rights reserved.
-        </p>
+      <div className="border-t border-slate-100 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-slate-800 text-xs text-center sm:text-left">
+          <p>© {new Date().getFullYear()} Udhyamgrow Services Private Limited. All rights reserved.</p>
+
+        </div>
+
         <p className="font-display text-gold text-xs font-semibold text-center sm:text-right">
           Transforming Startups, Scaling Growth.
         </p>
+        <a href="#privacy-policy" className="hover:text-gold transition-colors duration-200 underline sm:no-underline font-medium">
+          Privacy Policy
+        </a>
       </div>
     </div>
   </footer>

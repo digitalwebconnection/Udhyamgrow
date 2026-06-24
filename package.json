@@ -4,15 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "build": "npm run build:client && npm run build:server && node prerender.js",
-    "build:client": "vite build --outDir dist",
-    "build:server": "vite build --ssr src/entry-server.jsx --outDir dist-server",
-    "serve": "node server.js",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.2.4",
     "express": "^5.2.1",
     "framer-motion": "^12.38.0",
@@ -22,7 +20,8 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "sonner": "^2.0.7",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.2.4",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

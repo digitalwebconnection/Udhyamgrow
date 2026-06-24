@@ -75,7 +75,7 @@ const Reviews = () => {
 
   return (
     <section className="bg-white py-6">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-6">

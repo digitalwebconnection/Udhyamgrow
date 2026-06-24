@@ -1,11 +1,9 @@
-import React from 'react';
+
 import Header from '../Header';
 import Hero from './Hero';
 import Footer from '../Footer';
 import {
-  SectionHeader,
   WhatYoullLearn,
-  Hosts,
   About,
   WhyAttend,
   Services,
@@ -19,7 +17,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       {/* Header Navigation */}
       <Header />
 
@@ -30,9 +28,6 @@ const HomePage = () => {
 
       {/* What You'll Learn Section */}
       <WhatYoullLearn />
-
-      {/* Hosts Section */}
-      <Hosts />
 
       {/* About Section */}
       <About />
@@ -63,7 +58,7 @@ const HomePage = () => {
 
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 };
 
