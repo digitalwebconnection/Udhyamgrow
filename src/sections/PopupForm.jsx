@@ -165,18 +165,18 @@ const PopupForm = ({ open, setOpen }) => {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute left-0 top-0 w-1/2 h-full bg-[#0d1527] z-50 flex flex-col items-end justify-center overflow-hidden pointer-events-none"
+              className="absolute left-0 top-0 w-1/2 h-full bg-[#0d1527] z-50 overflow-hidden pointer-events-none"
             >
               {/* Left half of emblem holding left half of logo */}
-              <div className="w-[100px] h-[90px] border-y-2 border-l-2 border-gold rounded-l-full bg-white flex items-center justify-end pr-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden relative mb-2">
+              <div className="absolute top-[40%] right-0 -translate-y-1/2 w-[100px] h-[90px] border-y-2 border-l-2 border-gold rounded-l-full bg-white flex items-center justify-end pr-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden">
                 <img src={logoImg} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-5 drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
               </div>
 
               {/* Left half of growth content & disclaimer */}
-              <div className="mr-6 text-right max-w-[220px]">
-                <h4 className="text-white text-xs font-semibold uppercase tracking-wider">Accelerating Startup</h4>
-                <p className="text-gold text-[13px] font-bold mt-1">Growth & Funding</p>
-                <p className="text-[#64748B] text-[8.5px] mt-2 leading-relaxed">
+              <div className="absolute top-[58%] right-6 text-right max-w-[170px] sm:max-w-[220px]">
+                <h4 className="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider">Accelerating Startup</h4>
+                <p className="text-gold text-[11px] sm:text-[13px] font-bold mt-1">Growth & Funding</p>
+                <p className="text-[#64748B] text-[7.5px] sm:text-[8.5px] mt-2 leading-relaxed">
                   *Disclaimer: Connecting you with certified specialists to register & scale globally.
                 </p>
               </div>
@@ -188,18 +188,18 @@ const PopupForm = ({ open, setOpen }) => {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute right-0 top-0 w-1/2 h-full bg-[#0d1527] z-50 flex flex-col items-start justify-center overflow-hidden pointer-events-none"
+              className="absolute right-0 top-0 w-1/2 h-full bg-[#0d1527] z-50 overflow-hidden pointer-events-none"
             >
               {/* Right half of emblem holding right half of logo */}
-              <div className="w-[100px] h-[90px] border-y-2 border-r-2 border-gold rounded-r-full bg-white flex items-center justify-start pl-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden relative mb-2">
+              <div className="absolute top-[40%] left-0 -translate-y-1/2 w-[100px] h-[90px] border-y-2 border-r-2 border-gold rounded-r-full bg-white flex items-center justify-start pl-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden">
                 <img src={logoImg} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-[-80px] drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
               </div>
 
               {/* Right half of growth content & disclaimer */}
-              <div className="ml-6 text-left max-w-[220px]">
-                <h4 className="text-gold text-xs font-semibold uppercase tracking-wider">Process & Compliance</h4>
-                <p className="text-white text-[13px] font-bold mt-1">Global Scale-Up</p>
-                <p className="text-[#64748B] text-[8.5px] mt-2 leading-relaxed">
+              <div className="absolute top-[58%] left-6 text-left max-w-[170px] sm:max-w-[220px]">
+                <h4 className="text-gold text-[10px] sm:text-xs font-semibold uppercase tracking-wider">Process & Compliance</h4>
+                <p className="text-white text-[11px] sm:text-[13px] font-bold mt-1">Global Scale-Up</p>
+                <p className="text-[#64748B] text-[7.5px] sm:text-[8.5px] mt-2 leading-relaxed">
                   Secure data transmission. Your credentials are never shared.
                 </p>
               </div>
