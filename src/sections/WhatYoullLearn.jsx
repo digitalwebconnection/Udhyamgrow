@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Award, Coins, Landmark, ShieldCheck, Globe } from 'lucide-react';
 
 const learnItems = [
@@ -42,11 +42,11 @@ const WhatYoullLearn = () => {
 
   return (
     <section id="learn" className="bg-white ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
 
         {/* HEADER */}
         <div className="text-center max-w-4xl mx-auto mb-6">
-          <p className="text   text-gold font-medium mb-2">
+          <p className="   text-gold font-medium mb-2">
             OUR EXPERTISE
           </p>
 
@@ -70,7 +70,7 @@ const WhatYoullLearn = () => {
                 key={i}
                 className={`group relative overflow-hidden p-8 h-60 border mx-4 my-4 text-center     border-gold transition-all duration-500
                 
-                hover:shadow   hover:-translate-y-2
+                hover:shadow-xl   hover:-translate-y-2
                 ${isActive ? "shadow-lg shadow-black   -translate-y-2" : ""}
                 ${i < 3 ? "md:col-span-2" : "md:col-span-3"}
               `}

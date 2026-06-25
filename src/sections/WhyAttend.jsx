@@ -1,5 +1,3 @@
-import React from 'react';
-
 const whyItems = [
   {
     title: 'Expert Guidance',
@@ -25,8 +23,7 @@ const WhyAttend = () => (
     className="relative py-8 lg:py-12 overflow-hidden"
   >
     {/* Parallax-feel bg image */}
-    <div
-      className="absolute inset-0 "
+    <div className="absolute inset-0 "
       style={{
         backgroundImage:
           'url(https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=srgb&fm=jpg&w=1920&q=80)',

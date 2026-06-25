@@ -1,12 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Award, ArrowRight } from 'lucide-react';
 
-import img1 from "../assets/1.jpg";
-import img2 from "../assets/2.jpg";
-import img3 from "../assets/3.jpg";
-
-
-const bgImages = [img1, img2, img3];
+const bgImages = ["/1.jpg", "/2.jpg", "/3.jpg"];
 
 const Hero = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -68,7 +63,7 @@ const Hero = () => {
             </div>
 
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-blue-950 mb-6">
-              Turn Your <span className="text-gold font-black">Startup Vision</span> <br />
+              Turn Your <span className="text-gold font-black">Startup Vision </span>
               Into A Scalable Reality
             </h1>
 
@@ -116,14 +111,19 @@ const Hero = () => {
           <div className="lg:col-span-6 fade-in-up-delay flex justify-center lg:justify-end z-10">
             <div className="relative w-full max-w-2xl shadow-black aspect-4/3  overflow-hidden shadow-2xl border-2 border-gold bg-slate-200">
 
-              {/* Slideshow of images */}
+              {/* Slideshow of images (optimized with HTML <img> tags, fetchpriority, and lazy-loading) */}
               <div className="absolute inset-0 w-full h-full overflow-hidden">
                 {bgImages.map((img, idx) => (
-                  <div
+                  <img
                     key={idx}
-                    className={`absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1200 ease-in-out ${idx === currentIdx ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+                    src={img}
+                    alt={`Startup advisors slideshow ${idx + 1}`}
+                    width={640}
+                    height={480}
+                    fetchpriority={idx === 0 ? "high" : "low"}
+                    loading={idx === 0 ? "eager" : "lazy"}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1200 ease-in-out ${idx === currentIdx ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                       }`}
-                    style={{ backgroundImage: `url(${img})` }}
                   />
                 ))}
               </div>

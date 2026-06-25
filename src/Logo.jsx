@@ -6,6 +6,8 @@ const Logo = ({ className = "h-14" }) => {
     <img 
       src={logoImg} 
       alt="Udhyamgrow Logo" 
+      width={180}
+      height={48}
       className={`${className} object-contain drop-shadow-lg drop-shadow-black/10`} 
     />
   );

@@ -145,7 +145,7 @@ const PopupForm = ({ open, setOpen }) => {
             onClick={() => setOpen(false)}
           />
 
-         
+
 
           {/* FORM BOX - premium rounded shadow container */}
           <motion.div
@@ -169,7 +169,7 @@ const PopupForm = ({ open, setOpen }) => {
             >
               {/* Left half of emblem holding left half of logo */}
               <div className="absolute top-[40%] right-0 -translate-y-1/2 w-[100px] h-[90px] border-y-2 border-l-2 border-gold rounded-l-full bg-white flex items-center justify-end pr-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden">
-                <img src={logoImg} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-5 drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
+                <img src={logoImg} width={160} height={48} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-5 drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
               </div>
 
               {/* Left half of growth content & disclaimer */}
@@ -192,7 +192,7 @@ const PopupForm = ({ open, setOpen }) => {
             >
               {/* Right half of emblem holding right half of logo */}
               <div className="absolute top-[40%] left-0 -translate-y-1/2 w-[100px] h-[90px] border-y-2 border-r-2 border-gold rounded-r-full bg-white flex items-center justify-start pl-10 shadow-[0_0_25px_rgba(158,51,55,0.4)] overflow-hidden">
-                <img src={logoImg} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-[-80px] drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
+                <img src={logoImg} width={160} height={48} className="h-12 w-[160px] min-w-[160px] max-w-none object-contain absolute left-[-80px] drop-shadow-[0_2px_4px_rgba(0,0,0,0.15)]" alt="" />
               </div>
 
               {/* Right half of growth content & disclaimer */}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Ship, Globe, FileText, CheckCircle, Briefcase } from 'lucide-react';
 
 const exportSteps = [
@@ -26,13 +25,13 @@ const exportSteps = [
 
 const ExportServices = () => {
   return (
-    <section id="export" className="bg-white py-14 lg:py-24">
+    <section id="export" className="bg-white py-8 lg:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left Column: Expansion steps */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3  mb-4">
               <span className="gold-rule" />
               <span className="section-header-eyebrow">GLOBAL EXPORT SERVICES</span>
               <span className="gold-rule" />

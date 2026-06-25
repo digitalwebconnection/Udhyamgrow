@@ -18,7 +18,7 @@ const PrivacyPolicyPage = () => {
           </h1>
           <div className="space-y-6 text-slate-700 leading-relaxed text-sm md:text-base">
             <p className="text-xs text-slate-400">Last updated: June 24, 2026</p>
-            
+
             <section className="space-y-3">
               <h2 className="text-xl font-bold text-blue-950">1. Information We Collect</h2>
               <p>

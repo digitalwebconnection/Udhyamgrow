@@ -1,4 +1,3 @@
-import React from 'react';
 
 const About = () => (
   <section id="about" className="bg-ivory py-8 lg:py-12">
@@ -44,6 +43,9 @@ const About = () => (
           <img
             src="https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=srgb&fm=jpg&w=900&q=85"
             alt="Business meeting"
+            width={900}
+            height={540}
+            loading="lazy"
             className="w-full shadow-lg shadow-black h-135 object-cover"
           />
           <div className="hidden md:block absolute -bottom-8 -left-8 bg-ink p-8 max-w-xs shadow   ">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Compass, DollarSign, Stamp, Globe, Landmark, Laptop } from 'lucide-react';
 
 const services = [
@@ -46,7 +45,7 @@ const Services = () => (
 
       {/* HEADER */}
       <div className="text-center max-w-3xl mx-auto mb-5 md:mb-16">
-        <p className="text-sm md:text  text-gold font-medium mb-2">
+        <p className="text-sm md:text-lg  text-gold font-medium mb-2">
           OUR SERVICES
         </p>
         <h2 className="font-display  max-w    mx-auto text-3xl drop-shadow-[0_2px_0px_rgba(0,0,0,0.8)]  sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-ink mb-5">
@@ -74,7 +73,7 @@ const Services = () => (
               <div className="w-12 h-12 bg-ink flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300 relative z-10">
                 <Icon size={22} className="text-white" />
               </div>
-              <h3 className="font-display text    text-ink mb-3 relative z-10">{svc.title}</h3>
+              <h3 className="font-display text-lg    text-ink mb-3 relative z-10">{svc.title}</h3>
               <p className="text-sm text-muted leading-relaxed relative z-10">{svc.desc}</p>
             </div>
           );
