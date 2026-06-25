@@ -99,7 +99,7 @@ const PopupForm = ({ open, setOpen }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) {
       toast.error("Please fill in all required fields.");
@@ -107,16 +107,38 @@ const PopupForm = ({ open, setOpen }) => {
     }
 
     setLoading(true);
-    setTimeout(() => {
+    try {
+      const payload = new FormData();
+      payload.append("access_key", "133572f1-cd3e-4b8f-ab89-af0d44fd0179");
+      payload.append("name", formData.name);
+      payload.append("email", formData.email);
+      payload.append("phone", formData.phone);
+      payload.append("startup_stage", formData.stage);
+      payload.append("message", formData.message || "No message provided");
+      payload.append("subject", `New Consultation Request from ${formData.name}`);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: payload,
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        setLoading(false);
+        setSubmitted(true);
+        toast.success("Consultation booked successfully!");
+        setTimeout(() => {
+          setSubmitted(false);
+          setOpen(false);
+          setFormData({ name: "", email: "", phone: "", stage: "", message: "" });
+        }, 3000);
+      } else {
+        throw new Error(data.message || "Submission failed");
+      }
+    } catch (err) {
       setLoading(false);
-      setSubmitted(true);
-      toast.success("Consultation booked successfully!");
-      setTimeout(() => {
-        setSubmitted(false);
-        setOpen(false);
-        setFormData({ name: "", email: "", phone: "", stage: "", message: "" });
-      }, 3000);
-    }, 1500);
+      toast.error(err.message || "Something went wrong. Please try again.");
+    }
   };
 
   const handleInputChange = (e) => {
@@ -145,8 +167,6 @@ const PopupForm = ({ open, setOpen }) => {
             onClick={() => setOpen(false)}
           />
 
-
-
           {/* FORM BOX - premium rounded shadow container */}
           <motion.div
             variants={modalVariants}
@@ -155,7 +175,7 @@ const PopupForm = ({ open, setOpen }) => {
             exit="exit"
             className="relative bg-white w-full max-w-xl rounded-4xl shadow-2xl p-8 md:p-10 z-50 border border-slate-100 overflow-hidden"
           >
-
+            
             {/* Top accent line */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-gold via-gold to-blue-950" />
 
